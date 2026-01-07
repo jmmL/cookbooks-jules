@@ -1,16 +1,84 @@
-# React + Vite
+# Recipe Indexing Webapp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page web application designed to index and browse recipes from a household's cookbook collection. This application allows users to find recipes based on ingredients, themes, cooking time, difficulty, and seasonality without needing to flip through physical books first.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **📖 Recipe Indexing**: Browse recipes with details like Book Name, Author, Cuisine, Page Number, and Times.
+- **🔍 Smart Search**: Filter recipes by name or ingredients instantly.
+- **⚡ Quick Filters**: One-click access to common categories (e.g., "Chicken", "Vegetarian", "Under 30m").
+- **🎛️ Advanced Filtering**:
+  - **Theme**: Filter by dish type (Starter, Meat, Fish, Tofu, etc.).
+  - **Time**: Filter by total preparation time (Under 30m, 30-60m, Over 60m).
+  - **Difficulty**: Easy, Medium, Hard.
+  - **Seasonality**: Find the perfect dish for the current season.
+- **❤️ Favorites**: Save your go-to recipes. Favorites are stored locally on your device.
+- **📱 Responsive Design**: Optimized for both desktop and mobile use.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) (v18+)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Testing**:
+  - Unit: [Vitest](https://vitest.dev/)
+  - E2E: [Playwright](https://playwright.dev/)
+- **CI/CD**: GitHub Actions
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:5173`.
+
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist` directory, ready for deployment to static hosting services like GitHub Pages.
+
+## Testing
+
+### Unit Tests
+Run unit tests to verify component logic and filtering:
+```bash
+npm test
+```
+
+### End-to-End (E2E) Tests
+Run E2E tests to verify user flows and UI:
+```bash
+npx playwright test
+```
+
+## Data Management
+
+Recipes are currently stored in `src/data/recipes.json`. To add new recipes, edit this file following the existing JSON structure.
+
+## License
+
+MIT

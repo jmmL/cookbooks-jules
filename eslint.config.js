@@ -37,7 +37,15 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      'react/prop-types': 'off', // Turning off prop-types for this simple project
+      'react/prop-types': 'off',
     },
   },
+  {
+    files: ['playwright.config.js'],
+    languageOptions: {
+        globals: {
+            ...globals.node,
+        }
+    }
+  }
 ];

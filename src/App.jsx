@@ -6,8 +6,13 @@ import recipesData from './data/recipes.json';
 function App() {
   const [recipes] = useState(recipesData);
   const [favorites, setFavorites] = useState(() => {
-    const storedFavorites = localStorage.getItem('favorites');
-    return storedFavorites ? JSON.parse(storedFavorites) : [];
+    try {
+      const storedFavorites = localStorage.getItem('favorites');
+      return storedFavorites ? JSON.parse(storedFavorites) : [];
+    } catch (error) {
+      console.error('Failed to parse favorites from localStorage:', error);
+      return [];
+    }
   });
 
   // Filter States
@@ -56,9 +61,15 @@ function App() {
       // 2. Search Term (Name or Ingredients)
       if (searchTerm) {
         const term = searchTerm.toLowerCase();
-        const matchesName = recipe.recipeName.english.toLowerCase().includes(term) ||
-                            (recipe.recipeName.original && recipe.recipeName.original.toLowerCase().includes(term));
-        const matchesIngredient = recipe.ingredients.some(ing => ing.toLowerCase().includes(term));
+
+        // Defensive coding for Name
+        const englishName = recipe.recipeName?.english?.toLowerCase() || '';
+        const originalName = recipe.recipeName?.original?.toLowerCase() || '';
+        const matchesName = englishName.includes(term) || originalName.includes(term);
+
+        // Defensive coding for Ingredients
+        const ingredients = recipe.ingredients || [];
+        const matchesIngredient = ingredients.some(ing => ing.toLowerCase().includes(term));
 
         if (!matchesName && !matchesIngredient) return false;
       }
