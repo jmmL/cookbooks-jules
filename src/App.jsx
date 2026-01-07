@@ -1,11 +1,14 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import RecipeList from './components/RecipeList';
 import Filters from './components/Filters';
 import recipesData from './data/recipes.json';
 
 function App() {
   const [recipes] = useState(recipesData);
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState(() => {
+    const storedFavorites = localStorage.getItem('favorites');
+    return storedFavorites ? JSON.parse(storedFavorites) : [];
+  });
 
   // Filter States
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,13 +20,6 @@ function App() {
   });
   const [activeQuickFilter, setActiveQuickFilter] = useState(null);
   const [showFavorites, setShowFavorites] = useState(false);
-
-  useEffect(() => {
-    const storedFavorites = localStorage.getItem('favorites');
-    if (storedFavorites) {
-      setFavorites(JSON.parse(storedFavorites));
-    }
-  }, []);
 
   const toggleFavorite = (id) => {
     let newFavorites;

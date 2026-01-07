@@ -1,5 +1,3 @@
-import React from 'react';
-
 const RecipeCard = ({ recipe, isFavorite, onToggleFavorite }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
