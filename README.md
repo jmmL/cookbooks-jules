@@ -78,7 +78,3 @@ npx playwright test
 ## Data Management
 
 Recipes are currently stored in `src/data/recipes.json`. To add new recipes, edit this file following the existing JSON structure.
-
-## License
-
-MIT
