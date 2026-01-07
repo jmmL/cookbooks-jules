@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "bookName": "Simple Comforts",
+    "author": "Mary Berry",
+    "cuisine": "British",
+    "recipeName": {
+      "english": "Roasted Chicken with Lemon",
+      "original": "",
+      "pronunciation": ""
+    },
+    "theme": "Meat",
+    "times": {
+      "preparation": 90,
+      "active": 20
+    },
+    "difficulty": "Easy",
+    "ingredients": ["Chicken", "Lemon", "Thyme", "Butter", "Garlic"],
+    "seasonality": "Winter",
+    "pageNumber": 45
+  },
+  {
+    "id": 2,
+    "bookName": "Sichuan Cookery",
+    "author": "Fuchsia Dunlop",
+    "cuisine": "Chinese",
+    "recipeName": {
+      "english": "Mapo Tofu",
+      "original": "麻婆豆腐",
+      "pronunciation": "Má pó dòu fu"
+    },
+    "theme": "Tofu",
+    "times": {
+      "preparation": 30,
+      "active": 15
+    },
+    "difficulty": "Medium",
+    "ingredients": ["Tofu", "Beef Mince", "Sichuan Peppercorns", "Chili Bean Paste", "Garlic", "Ginger"],
+    "seasonality": "Winter",
+    "pageNumber": 120
+  },
+  {
+    "id": 3,
+    "bookName": "The Art of French Cooking",
+    "author": "Julia Child",
+    "cuisine": "French",
+    "recipeName": {
+      "english": "Salade Niçoise",
+      "original": "Salade Niçoise",
+      "pronunciation": ""
+    },
+    "theme": "Starter",
+    "times": {
+      "preparation": 40,
+      "active": 30
+    },
+    "difficulty": "Medium",
+    "ingredients": ["Tuna", "Green Beans", "Potatoes", "Eggs", "Olives", "Anchovies"],
+    "seasonality": "Summer",
+    "pageNumber": 210
+  },
+  {
+    "id": 4,
+    "bookName": "Every Grain of Rice",
+    "author": "Fuchsia Dunlop",
+    "cuisine": "Chinese",
+    "recipeName": {
+      "english": "Smacked Cucumber",
+      "original": "拍黄瓜",
+      "pronunciation": "Pāi huáng guā"
+    },
+    "theme": "Starter",
+    "times": {
+      "preparation": 10,
+      "active": 10
+    },
+    "difficulty": "Easy",
+    "ingredients": ["Cucumber", "Garlic", "Chili Oil", "Vinegar", "Soy Sauce"],
+    "seasonality": "Summer",
+    "pageNumber": 35
+  },
+  {
+    "id": 5,
+    "bookName": "Essentials of Classic Italian Cooking",
+    "author": "Marcella Hazan",
+    "cuisine": "Italian",
+    "recipeName": {
+      "english": "Tomato Sauce with Onion and Butter",
+      "original": "",
+      "pronunciation": ""
+    },
+    "theme": "Vegetarian",
+    "times": {
+      "preparation": 45,
+      "active": 5
+    },
+    "difficulty": "Easy",
+    "ingredients": ["Tomatoes", "Onion", "Butter", "Salt"],
+    "seasonality": "Summer",
+    "pageNumber": 89
+  },
+  {
+    "id": 6,
+    "bookName": "Thai Food",
+    "author": "David Thompson",
+    "cuisine": "Thai",
+    "recipeName": {
+      "english": "Green Curry with Fish Dumplings",
+      "original": "",
+      "pronunciation": ""
+    },
+    "theme": "Fish",
+    "times": {
+      "preparation": 60,
+      "active": 45
+    },
+    "difficulty": "Hard",
+    "ingredients": ["Fish", "Coconut Milk", "Green Curry Paste", "Thai Basil", "Kaffir Lime Leaves"],
+    "seasonality": "Spring",
+    "pageNumber": 302
+  },
+  {
+    "id": 7,
+    "bookName": "Jerusalem",
+    "author": "Yotam Ottolenghi",
+    "cuisine": "Middle Eastern",
+    "recipeName": {
+      "english": "Roasted Eggplant with Buttermilk Sauce",
+      "original": "",
+      "pronunciation": ""
+    },
+    "theme": "Vegetarian",
+    "times": {
+      "preparation": 50,
+      "active": 15
+    },
+    "difficulty": "Medium",
+    "ingredients": ["Eggplant", "Buttermilk", "Pomegranate Seeds", "Za'atar", "Thyme"],
+    "seasonality": "Autumn",
+    "pageNumber": 78
+  },
+  {
+    "id": 8,
+    "bookName": "Japanese Cooking",
+    "author": "Shizuo Tsuji",
+    "cuisine": "Japanese",
+    "recipeName": {
+      "english": "Miso Soup with Clams",
+      "original": "Asari no Miso Shiru",
+      "pronunciation": ""
+    },
+    "theme": "Soup",
+    "times": {
+      "preparation": 15,
+      "active": 10
+    },
+    "difficulty": "Easy",
+    "ingredients": ["Clams", "Miso Paste", "Dashi", "Green Onion"],
+    "seasonality": "Spring",
+    "pageNumber": 145
+  },
+    {
+    "id": 9,
+    "bookName": "Land of Plenty",
+    "author": "Fuchsia Dunlop",
+    "cuisine": "Chinese",
+    "recipeName": {
+      "english": "Kung Pao Chicken",
+      "original": "宫保鸡丁",
+      "pronunciation": "Gōng bǎo jī dīng"
+    },
+    "theme": "Meat",
+    "times": {
+      "preparation": 30,
+      "active": 15
+    },
+    "difficulty": "Medium",
+    "ingredients": ["Chicken", "Peanuts", "Dried Chilies", "Sichuan Peppercorns", "Garlic", "Ginger"],
+    "seasonality": "Autumn",
+    "pageNumber": 222
+  },
+    {
+    "id": 10,
+    "bookName": "Salt, Fat, Acid, Heat",
+    "author": "Samin Nosrat",
+    "cuisine": "General",
+    "recipeName": {
+      "english": "Buttermilk Marinated Roast Chicken",
+      "original": "",
+      "pronunciation": ""
+    },
+    "theme": "Meat",
+    "times": {
+      "preparation": 1440,
+      "active": 60
+    },
+    "difficulty": "Easy",
+    "ingredients": ["Chicken", "Buttermilk", "Salt"],
+    "seasonality": "All Year",
+    "pageNumber": 315
+  }
+]
